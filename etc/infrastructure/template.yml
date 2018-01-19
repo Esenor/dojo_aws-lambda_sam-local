@@ -21,9 +21,11 @@ Resources:
   dojoOrderModel:    
     Type: 'AWS::Serverless::Function'    
     Properties:
+      FunctionName: 'dev--dojo--orderModel'
       Handler: dist/handler.findCustomerByMail
       Runtime: nodejs6.10
       CodeUri: ../../
       Description: 'Customers Model'
       MemorySize: 128
       Timeout: 3
+
