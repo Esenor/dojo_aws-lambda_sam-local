@@ -21,7 +21,7 @@ Resources:
     Type: 'AWS::Serverless::Function'    
     Properties:
       FunctionName: !Sub ${Stage}--${Env}--dojo--orderModel
-      Handler: dist/handler.findCustomerByMail
+      Handler: dist/handler.findOrderByMail
       Runtime: nodejs6.10
       CodeUri: ../../
       Description: 'Customers Model'
