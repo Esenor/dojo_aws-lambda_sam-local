@@ -1,6 +1,6 @@
 # ------------------------------------------------------------------------------
 # Invoke localy the function
-desc "Localy invoke"
+desc "Locally invoke"
 task :localInvoke do 
   ARGV.each { |a| task a.to_sym do ; end }
   if (ARGV.size == 2)
