@@ -1,6 +1,2 @@
-const orderModel = require('./index.js')
-
-module.exports.findOrderByMail = (event, context, callback) => {
-  console.log(event)
-  callback(null, orderModel.getOrdersList(event.mail))
-}
+// ToDo: Export a findOrderByMail function with params (event, context, callback)
+// The Callback has two params, the first is "null" and the last is the return value
