@@ -3,20 +3,6 @@ Transform: 'AWS::Serverless-2016-10-31'
 Description: Dojo Sam Local & AWS Lambda
 
 
-Parameters:
-  Stage: 
-    Type: String
-    Default: dev
-    AllowedValues: 
-      - dev
-      - ppd
-      - prd
-    Description: Enter stage name
-  Env:
-    Type: String
-    Default: default
-    Description: Enter env name
-
 Resources:
   dojoOrderModel:    
     Type: 'AWS::Serverless::Function'    
